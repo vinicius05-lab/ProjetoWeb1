@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./partials/head.ejs")%>
+    <body>
+        <%- include ("./partials/nav.ejs")%>
+        <div class="container">
+            <hr>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Inscrição:</h2>
+                </div>
+                <div class="card-body">
+                  <form action="/cadastro" method="post">
+                    <label>Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu nome aqui..." class="form-control"><br>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email aqui..." class="form-control"><br>
+                    <label>Senha:</label>
+                    <input type="password" name="password" placeholder="Crie sua senha aqui..." class="form-control"><br>
+                    <button class="btn btn-primary">Salvar</button>
+                  </form>
+                </div>
+            </div><hr>
+        </div>
+    </body>
+</html>

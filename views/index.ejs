@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ("./partials/head.ejs")%>
+    <body>
+      <%- include ("./partials/nav.ejs")%>
+        <div class="container">
+            <hr>
+            <div class="jumbotron">
+                <div class="d-flex align-items-center">
+                  <img src="img/logo.png" width="100px" alt="Astrolife">
+                  <h1 class="display-4 ml-3">AstroLife</h1>
+                </div>
+                <p class="lead">Site sobre o projeto AstroLife</p>
+                <hr class="my-4">
+                <p>Descrição detalhada aqui:</p>
+                <a class="btn btn-primary btn-lg" href="/sobre-nos" role="button">Saiba Mais</a>
+            </div>
+            <hr>
+            <h2>Projetos:</h2><br>
+            <div class="card-group">
+              <div class="card">
+                <a href="/estudo-dos-astros"><img class="card-img-top" height="412px" src="img/astros.jpg" alt="Imagem de capa do card"></a>
+                <div class="card-body">
+                  <h5 class="card-title">Estudo dos Astros</h5>
+                  <p class="card-text">Esse é o projeto da primeira semana, onde os participantes terão aula sobre os astros (planetas, estrelas, meteoros etc.) e sistemas como galáxias.</p>
+                </div>
+              </div>
+              <div class="card">
+                <a href="/iasc"><img class="card-img-top" src="img/IASC.png" alt="Projeto IASC"></a>
+                <div class="card-body">
+                  <h5 class="card-title">Projeto IASC</h5>
+                  <p class="card-text">Na segunda semana ensinaremos aos participantes o que é o IASC e como se cadastrar e participar.</p>
+                </div>
+              </div>
+              <div class="card">
+                <a href="/projeto-foguetes"><img class="card-img-top" src="img/Foguete.png" alt="Imagem de capa do card"></a>
+                <div class="card-body">
+                  <h5 class="card-title">Foguete de Garrafa Pet</h5>
+                  <p class="card-text">Na terceira e última semana teremos o nosso projeto de mini foguetes feito de garrafas pets</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
